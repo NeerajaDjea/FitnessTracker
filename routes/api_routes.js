@@ -39,7 +39,7 @@ module.exports = function(app) {
         }
     });
 
-    //Get all workouts in database
+
     app.get(`/api/workouts/range`, async(req, res) => {
         try {
             const data = await Workout.find({});
